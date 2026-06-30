@@ -46,12 +46,15 @@ pip install -r requirements.txt
 
 Paste a sample of your app's CLI or Streamlit output here so a reader can see what a generated plan looks like:
 
-```
-# e.g.:
-# Daily plan for Biscuit (Golden Retriever):
-#   08:00 — Morning walk (30 min) [priority: high]
-#   09:00 — Feeding (10 min) [priority: high]
-#   ...
+```text
+Daily Schedule
+----------------------------------------
+Feed Breakfast | 10 min | High
+Morning Walk | 30 min | High
+Brush Coat | 20 min | Medium
+Play Fetch | 45 min | Low
+
+Buddy (Dog) belongs to James
 ```
 
 ## 🧪 Testing PawPal+
@@ -74,21 +77,21 @@ Sample test output:
 
 > Fill in once you've implemented scheduling logic.
 
+```md
 | Feature | Method(s) | Notes |
-|---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
-| Recurring tasks | | e.g., daily vs. weekly |
+|---|---|---|
+| Task sorting | `Scheduler.sort_tasks()` | Sorts tasks by priority first, then duration. High priority tasks appear before medium and low priority tasks. |
+| Display schedule | `Scheduler.display_schedule()` | Prints a clean daily schedule in the terminal. |
+| Owner information | `Owner.get_pet_info()` | Shows the pet name, species, and owner. |
 
 ## 📸 Demo Walkthrough
 
 Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. The user enters owner information and pet information.
+2. The user creates pet care tasks such as feeding, walking, brushing, and play.
+3. The scheduler stores all tasks for the owner.
+4. The scheduler sorts tasks by priority so important tasks happen first.
+5. The app prints a clean daily schedule in the terminal.
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->
