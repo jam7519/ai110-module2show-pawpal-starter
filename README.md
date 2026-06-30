@@ -69,9 +69,15 @@ pytest --cov
 
 Sample test output:
 
-```
-# Paste your pytest output here
-```
+```text
+============================= test session starts =============================
+platform win32 -- Python 3.13
+pytest-8.4.1
+
+collected 0 items
+
+============================ no tests ran ============================
+``` 
 
 ## 📐 Smarter Scheduling
 
